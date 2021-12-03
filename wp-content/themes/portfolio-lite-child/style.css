@@ -126,12 +126,12 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: none;
 }
 
-.home-blog {
+.home-blog,.showcase-category  {
     width:100%;
     max-width: 68.75em;
     margin: 0 auto;
 }
-.home-blog .showcase-posts {
+.home-blog .showcase-posts, .showcase-category .article {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     -ms-column-count: 3;
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.9375em;
 }
 
-.home-blog .post-area {
+.home-blog .post-area, .showcase-category .post-area{
     padding: 0;
 }
 
