@@ -3,7 +3,7 @@ Theme Name:   Portfolio Lite Child Theme
 description:  A child theme of the Portfolio Lite theme
 Author:       Gail Middleton
 Template:     portfolio-lite
-Version:      1.0.0
+Version:      1.0.1
 */
 
 *, *::before, *::after {
@@ -60,7 +60,7 @@ body {
 #header.side-header a{		
 	color: #909294;
 	font-size: 1rem;
-	padding-left: .5rem;
+	padding-left: .5rem !important;
 }
 #header.side-header a:hover,#header.side-header  a:focus {
 	color: #8FC6D3;
