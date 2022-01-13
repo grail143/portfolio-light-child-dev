@@ -142,13 +142,7 @@
 			<!-- END #navigation -->
 			</nav>
 			<line></line>
-			<contact>
-				<a href="https:/grail143.com/pages/contact.php">Contact me</a>
-			</contact>
-			<line></line>
 			<div>
-				
-				<line></line>
 			</div>
 		<?php } ?>
 

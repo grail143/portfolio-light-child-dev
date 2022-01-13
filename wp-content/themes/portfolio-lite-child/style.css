@@ -6,6 +6,14 @@ Template:     portfolio-lite
 Version:      1.0.0
 */
 
+*, *::before, *::after {
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
 	color: #909294;
 	padding: 0;
@@ -50,9 +58,9 @@ body {
 	line-height: 1.6;
 }
 #header.side-header a{		
-	color: #444;
+	color: #909294;
 	font-size: 1rem;
-	padding-left: 0;
+	padding-left: .5rem;
 }
 #header.side-header a:hover,#header.side-header  a:focus {
 	color: #8FC6D3;
@@ -64,6 +72,7 @@ line {
 	display: block;
 }
 intro {
+	padding: 0 10px;
 	margin-top: 30px;
 	display: block;
 	line-height: 20px;
@@ -72,7 +81,7 @@ intro {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway',sans-serif;
-	color: #2c3f52;
+	color: #909294;
 	text-rendering: optimizeLegibility;
 	margin-top: 0.2em;
 	margin-bottom: 0.5em;
@@ -88,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 1.4;
 	}
 	h2 {
-		font-size: 2.3125em;
+		font-size: 2.5em;
 	}
 }
 
@@ -170,4 +179,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sidr li a:hover, .sidr li a:active, .sidr li a:focus {
     color: #ffffff;
+}
+
+nav {
+	padding-left: 10px;
+}
+nav ul.menu {
+	padding-left: .5rem;	
+}
+
+nav ul ul.sub-menu {
+    margin: 0 0 0 1.5rem;
+}
+
+nav ul.menu li li a::after {
+    content: '';
+    margin-left: 0;
+}
+
+	nav a {
+		color: #909294;
+		padding-left: .5rem;
+		text-align: left;
+	}
+	nav a:hover {
+			color: #8FC6D3;
+			background: #625261;
+			padding-left: 0.75rem;
+		}
+	nav a.active {
+		background: #e0e0e0;
+		border-radius: 3px;
+		text-decoration: none;
+		color: #625261;
+	}
+	
+ul.menu li a:hover, ul.menu li a:active, ul.menu li a:focus, ul.menu li.current-menu-item a, ul.menu li.current-menu-item a:link, ul.menu li.current-menu-item a:visited {
+    border-right: 0;
+	border-radius:3px;
 }
