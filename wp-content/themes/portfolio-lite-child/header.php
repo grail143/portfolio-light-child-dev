@@ -85,7 +85,7 @@
 		<!-- BEGIN .four columns -->
 		<div id="header" class="four columns side-header">
 
-			<?php if ( has_custom_logo() && ! is_single() ) { ?>
+			<?php if ( has_custom_logo() ) { ?>
 
 				<div class="site-logo"><?php the_custom_logo(); ?></div>
 

@@ -3,7 +3,7 @@ Theme Name:   Portfolio Lite Child Theme
 description:  A child theme of the Portfolio Lite theme
 Author:       Gail Middleton
 Template:     portfolio-lite
-Version:      1.0.1
+Version:      1.0.4
 */
 
 *, *::before, *::after {
@@ -92,25 +92,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     margin: 0 0 0 16.66667%;
 }
-@media only screen and (min-width: 768px) {
-	h1, h2, h3, h4, h5, h6 {
-		line-height: 1.4;
-	}
-	h2 {
-		font-size: 2.5em;
-	}
-}
-
-
-@media handheld, only screen and (max-width: 1023px) {
-    .footer {
-        margin-left: 0;
-    }
-    .site-logo a {
-        text-align: left;
-        margin: 0 auto;
-    }
-}
 #header.side-header contact a {
 	background-color: #FAD168;
 	color: #ffffff;
@@ -164,8 +145,14 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.portfolio-not-single main > .twelve{
+.portfolio-not-single main > .twelve, .single main > .post{
     min-width: calc(100vw - 19.25%);   
+}
+.single main > .post {
+	float: right;
+}
+.single #header.side-header {
+    display: block;
 }
 #menu-toggle {
     padding: 12px;
@@ -207,7 +194,7 @@ nav ul.menu li li a::after {
 			background: #625261;
 			padding-left: 0.75rem;
 		}
-	nav a.active {
+	nav .active a {
 		background: #e0e0e0;
 		border-radius: 3px;
 		text-decoration: none;
@@ -217,4 +204,33 @@ nav ul.menu li li a::after {
 ul.menu li a:hover, ul.menu li a:active, ul.menu li a:focus, ul.menu li.current-menu-item a, ul.menu li.current-menu-item a:link, ul.menu li.current-menu-item a:visited {
     border-right: 0;
 	border-radius:3px;
+}
+
+@media only screen and (min-width: 768px) {
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.4;
+	}
+	h2 {
+		font-size: 2.5em;
+	}
+	.portfolio-has-logo #header.top-header{
+		display:none !important;
+	}
+}
+
+
+@media handheld, only screen and (max-width: 1023px) {
+    .footer {
+        margin-left: 0;
+    }
+    .site-logo a {
+        text-align: left;
+        margin: 0 auto;
+    }
+	#header.side-header{
+		display:none !important;
+	}
+	.twelve {
+		width: 100% !important;
+	}
 }
