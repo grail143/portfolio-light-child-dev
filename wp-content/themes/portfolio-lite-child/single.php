@@ -23,7 +23,7 @@ get_header(); ?>
 		<div class="post-header">
 
 			<!-- BEGIN .ten columns -->
-			<div class="ten columns">
+			<div class="eight columns">
 
 				<?php if ( get_post_gallery() ) { ?>
 
@@ -47,10 +47,16 @@ get_header(); ?>
 			</div>
 
 			<!-- BEGIN .six columns -->
-			<div class="six columns">
+			<div class="eight columns">
 
-				<?php get_template_part( 'content/loop', 'excerpt' ); ?>
-
+				<?php get_template_part( 'content/loop', 'excerpt' );
+					$posttags = get_the_tags();
+					if ($posttags) {
+					  foreach($posttags as $tag) {
+						echo $tag->name . ' '; 
+					  }
+					}
+				?>
 			<!-- END .six columns -->
 			</div>
 

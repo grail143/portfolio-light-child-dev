@@ -3,7 +3,7 @@ Theme Name:   Portfolio Lite Child Theme
 description:  A child theme of the Portfolio Lite theme
 Author:       Gail Middleton
 Template:     portfolio-lite
-Version:      1.0.4
+Version:      1.0.5
 */
 
 *, *::before, *::after {
@@ -233,4 +233,12 @@ ul.menu li a:hover, ul.menu li a:active, ul.menu li a:focus, ul.menu li.current-
 	.twelve {
 		width: 100% !important;
 	}
+}
+
+.bg-img{
+	-webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+	background-repeat: no-repeat;
 }
