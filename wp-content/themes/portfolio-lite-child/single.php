@@ -50,12 +50,14 @@ get_header(); ?>
 			<div class="eight columns">
 
 				<?php get_template_part( 'content/loop', 'excerpt' );
-					$posttags = get_the_tags();
-					if ($posttags) {
-					  foreach($posttags as $tag) {
-						echo $tag->name . ' '; 
-					  }
-					}
+					$post_tags = get_the_tags();
+					if ( ! empty( $post_tags ) ) {
+						echo '<ul class="posttags">';
+						foreach( $post_tags as $post_tag ) {
+							echo '<li><a href="' . get_tag_link( $post_tag ) . '">' . $post_tag->name . '</a></li>';
+						}
+						echo '</ul>';
+					}   
 				?>
 			<!-- END .six columns -->
 			</div>

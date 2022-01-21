@@ -25,6 +25,7 @@ body {
 	line-height: 1;
 	position: relative;
 	cursor: default;
+	background-color: #f3f3f3;
 }
 
 #header.side-header {
@@ -241,4 +242,90 @@ ul.menu li a:hover, ul.menu li a:active, ul.menu li a:focus, ul.menu li.current-
     -o-background-size: contain;
     background-size: contain;
 	background-repeat: no-repeat;
+}
+
+.posttags{
+	list-style:none;
+	margin-left:24px;
+}
+.posttags li{
+	list-style:none;
+	display:inline-block;
+}
+.posttags a {
+	text-decoration:none;
+	display: inline-block;
+    color: rgba(0, 0, 0, 0.3) !important;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 4px 0px;
+    padding: 4px 8px 2px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+	background-color: #8FC6D3;
+}
+.posttags a:hover {
+    color: #f9f9f9 !important;
+	background-color: #666;
+}
+
+code, pre, .wp-block-code {
+    border: 1px solid #ccc;
+}
+.wp-block-image {
+    border: 2px solid #ddd;
+    background: white;
+}
+#wrapper .post-date p {
+    background: transparent;
+}
+
+.post-meta::before {
+    bottom: 30px;
+}
+.post-intro {
+    padding: 24px 36px 0 36px !important;
+}
+.feature-img {
+    border: 3px solid #F9F9F9;
+}
+.blue{-moz-column-count: 1;
+    -ms-column-count: 1;
+    column-count: 1;
+    -moz-column-gap: 24px;
+    -webkit-column-gap: 24px;
+    -ms-column-gap: 24px;
+    column-gap: 24px;
+    margin: 0 -0.59em 0 -0.58em;
+    background-color: #8FC6D3;
+    color: #F9F9F9;
+    border-radius: 3px;
+    padding: 0 0.9375em 0.5rem;
+}
+.showcase-category h3 {
+    text-align: center;
+    -moz-column-count: 1;
+    -ms-column-count: 1;
+    column-count: 1;
+    -moz-column-gap: 24px;
+    -webkit-column-gap: 24px;
+    -ms-column-gap: 24px;
+    column-gap: 24px;
+    margin: 0 -0.59em 0 -0.58em;
+    color: #F9F9F9;
+    border-radius: 3px 3px 0 0;
+    padding: 0 0.9375em 0.5rem;
+    position: relative;
+	line-height: 1.4;
+    margin-top: 0;
+	font-size:1.9375rem;
+}
+h3 line{
+	margin:0 10% 0;
+}
+.archive .showcase-posts {
+    column-count: 1;
+    max-width: 400px;
+    margin: 0 auto;
 }
