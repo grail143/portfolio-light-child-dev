@@ -303,7 +303,7 @@ code, pre, .wp-block-code {
     border-radius: 3px;
     padding: 0 0.9375em 0.5rem;
 }
-.showcase-category h3 {
+.showcase-category h3, .home-blog h3 {
     text-align: center;
     -moz-column-count: 1;
     -ms-column-count: 1;
