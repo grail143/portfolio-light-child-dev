@@ -24,4 +24,3 @@ function ns_load_scripts() {
 add_action( 'wp_enqueue_scripts', 'ns_load_scripts', 15 );
 
 ?>
-
