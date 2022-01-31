@@ -329,3 +329,78 @@ h3 line{
     max-width: 400px;
     margin: 0 auto;
 }
+
+fieldset{
+	border: 0 solid #fff;
+}
+form input[type=url], form input[type=tel], form input[type=email], form input[type=text], form input[type=password], form input[type=number], form textarea {
+	border: 1px solid #909294;
+	
+}
+.button {
+	 background-color: #8fc6d3;
+	 color: #625261;
+	 font-size: 1.2rem;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border: 1px solid #909294;
+	 text-transform:capitalize;
+}
+ .button:hover {
+	 background: #fad168;
+	 color: #625261;
+	 -moz-transition: all 2s;
+	 -ms-transition: all 2s;
+	 -webkit-transition: all 2s;
+	 -o-transition: all 2s;
+	 transition: all 2s;
+}
+ .button:active {
+	 background: #fad168;
+	 color: #625261;
+	 -moz-transition: all 2s;
+	 -ms-transition: all 2s;
+	 -webkit-transition: all 2s;
+	 -o-transition: all 2s;
+	 transition: all 2s;
+}
+ button {
+	 background-color: #909294;
+	 border-radius: 3px;
+	 display: block;
+	 padding: 0 5px;
+	 color: #f3f3f3;
+	 line-height: 35px;
+	 -moz-transition: all 0.6s;
+	 -ms-transition: all 0.6s;
+	 -webkit-transition: all 0.6s;
+	 -o-transition: all 0.6s;
+	 transition: all 0.6s;
+	 text-align: center;
+}
+ button:hover {
+	 outline: none;
+	 background: #8fc6d3;
+}
+ button:active {
+	 outline: none;
+	 background: #47a0b5;
+}.frm_submit {
+    text-align: center;
+}
+ .frm_message p {
+	 margin:0;
+ }
+ 
+div#button_share {
+    display: flex;
+    align-items: center;
+	width:33%;
+}
+
+#button_share img {
+width: 36px;
+box-shadow: 0;
+padding: 6px;
+display: inline;
+border: 0;
+}
