@@ -47,13 +47,13 @@
 			<?php 
 				$site_url  = "https://grail143.com";
 				$site_title  = "g143";
-				$page_url = "https://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+				$page_url = $site_url . "{$_SERVER['REQUEST_URI']}";
 			?>
-
 			<div id="button_share">
-				<span>SHARE:</span>
+							<span>SHARE:</span>
+				
 				<!-- Email Social Media -->
-				<a href="mailto:?Subject=<?=$site_title?>&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 <?=$page_url?>">
+				<a href="mailto:?Subject=<?=$site_title?>&amp;Body=<?php echo get_the_title( get_option('page_for_posts', true) )?> <?=$page_url?>">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/email.png" alt="Email share link" />
 				</a>
 			 
@@ -73,12 +73,12 @@
 				</a>
 				
 				<!-- Tumblr Social Media -->
-				<a href="http://www.tumblr.com/share/link?url=<?=$page_url?>&amp;title=<?=$site_title?>" target="_blank">
+				<a href="http://www.tumblr.com/share/link?url=<?=$page_url?>&amp;title=<?php echo get_the_title( get_option('page_for_posts', true) )?>" target="_blank">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/tumblr.png" alt="Tumblr share link" />
 				</a>
 				 
 				<!-- Twitter Social Media -->
-				<a href="https://twitter.com/share?url=<?=$page_url?>&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+				<a href="https://twitter.com/share?url=<?=$page_url?>&amp;text=<?php echo get_the_title( get_option('page_for_posts', true) )?>&amp;hashtags=games,codeblog" target="_blank">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/twitter.png" alt="Twitter share link" />
 				</a>
 				

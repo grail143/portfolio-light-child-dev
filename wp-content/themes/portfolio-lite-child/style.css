@@ -384,12 +384,15 @@ form input[type=url], form input[type=tel], form input[type=email], form input[t
  button:active {
 	 outline: none;
 	 background: #47a0b5;
-}.frm_submit {
+}
+
+.frm_submit {
     text-align: center;
 }
- .frm_message p {
-	 margin:0;
- }
+
+.frm_message p {
+	margin:0;
+}
  
 div#button_share {
     display: flex;
@@ -398,9 +401,9 @@ div#button_share {
 }
 
 #button_share img {
-width: 36px;
-box-shadow: 0;
-padding: 6px;
-display: inline;
-border: 0;
+	width: 36px;
+	box-shadow: 0;
+	padding: 6px;
+	display: inline;
+	border: 0;
 }
